@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link
+    href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+    rel="stylesheet"
+  />
+  <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <nav>
+            <div class="logo">
+                Baggy
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#blog">Blogs</a></li>
+                <li><a href="contact us.html">Contact</a></li>
+            </ul>
+            <div class="icon">
+                <a href="#"><i class="fa fa-search"></i></a>
+                <a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </div>
+        </nav>
+
+        <!-- main -->
+
+        <div class="main">
+            <div class="mainText">
+                <h2>Fashion Hub</h2>
+                <h1>Fashion For Always</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, maxime reprehenderit.</p>
+                <button>Explore</button>
+            </div>
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b25saW5lJTIwc2hvcHBpbmd8ZW58MHx8MHx8fDA%3D"
+                alt="">
+        </div>
+
+        <!-- card -->
+
+        <div class="shop" id="shop">
+            <div class="head">
+                <h2>Trending <span>Cloth's</span></h2>
+            </div>
+            <div class="cards">
+                <div class="crd">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+                    <h3>top</h3>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>$221 : Only</h3>
+                </div>
+                <div class="crd">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBsVF7gw21bZ3SXmHoMsNZ8WON-Hg5qD9uadPDmBeHGjFn7b0G-NDZXnujajQq9rC7hTQ&usqp=CAU"
+                        alt="">
+                    <h3>top</h3>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>$221 : Only</h3>
+                </div>
+                <div class="crd">
+                    <img src="images/c2.webp" alt="">
+                    <h3>top</h3>
+                    <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>$221 : Only</h3>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+
+            <div class="crd">
+                <img src="images/c4.webp" alt="">
+                <h3>top</h3>
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>$221 : Only</h3>
+            </div>
+            <div class="crd">
+                <img src="images/c5.webp" alt="">
+                <h3>top</h3>
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>$221 : Only</h3>
+            </div>
+            <div class="crd">
+                <img src="images/c6.webp" alt="">
+                <h3>top</h3>
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>$221 : Only</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- review -->
+
+    <div class="customer" id="review">
+        <div class="head">
+            <h2>Customer <span>Review</span></h2>
+        </div>
+        <div class="reviews">
+            <div class="reviewCard">
+                <img src="images/m1.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing expedita earum accusamus saepe dicta enim
+                    neque unde odit?</p>
+                <button>More.</button>
+            </div>
+            <div class="reviewCard">
+                <img src="images/m2.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing expedita earum accusamus saepe dicta enim
+                    neque unde odit?
+                    </p>
+                <button>More.</button>
+            </div>
+            <div class="reviewCard">
+                <img src="images/m3.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing expedita earum accusamus saepe dicta enim
+                    neque unde odit?
+                    </p>
+                <button>More.</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- blog -->
+    <div class="blog" id="blog">
+        <div class="head">
+            <h2>Read <span>Blogs</span></h2>
+        </div>
+        <div class="blogContainer">
+            <div class="blogCard">
+                <img src="images/c2.webp" alt="">
+                <p>The diverse range of products on this ecommerce platform is impressive, and the prices are
+                    competitive.
+                     </p>
+                <a href="https://stylesearch.com/eu/blogs">Read More</a>
+            </div>
+            <div class="blogCard">
+                <img src="images/c6.webp" alt="">
+                <p>Navigating this website is a breeze. 
+                    shopping experience enjoyable. bvjdsbvsdv  svbsdh dmhvbfdbvjd bjvd
+                </p>
+                    <a href="https://stylesearch.com/eu/blogs">Read More</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer>
+        <div class="footer0">
+            <h1>Baggy</h1>
+            <div class="footer1">
+                Connect with us at
+                <div class="social-media">
+                    <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
+                    <a href="#"> <ion-icon name="logo-linkedin"></ion-icon> </a>
+                    <a href="#"> <ion-icon name="logo-youtube"></ion-icon> </a>
+                    <a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
+                </div>
+            </div>
+            <div class="footer3">
+                Copyright ©
+                <h4>Baggy</h4>
+                2023
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
