@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.empty-cart {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.empty-cart p {
+    margin-bottom: 10px;
+}
+
+.empty-cart a {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.email-offer,
+.baggy,
+.email-subscription {
+    padding: 20px;
+}
+
+.email-offer h2,
+.baggy h2,
+.email-subscription h2 {
+    color: #0077cc;
+}
+
+.email-subscription form {
+    margin-top: 20px;
+}
+
+.email-subscription input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.email-subscription button {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
